@@ -5,8 +5,18 @@ Previously, if you upload a non-square horizontal image to instagram, the image 
 This script is smart enough to detect the orientation of the image and add the bars correctly.
 
 # Usage
-The script expects a "Before" folder in the same directory as the script. Put all the non-barred images here.
+To install, run:
+```
+$ bundle install
+```
+
+The script expects a "Before" folder in the root directory. Put all the non-barred images here.
 
 The script will then add the bars and create an "After" directory to store the outputs.
 
 You can change it to use white bars instead of black by editing the script.
+
+To run the script:
+```
+$ ruby add_bars.rb
+```
