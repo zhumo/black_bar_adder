@@ -5,6 +5,7 @@ require 'pathname'
 Pathname.new("./After/").mkpath
 
 Pathname.new("./Before/").children.each do |path|
+  next if path.basename.to_s == ".DS_Store"
   img = Magick::Image.read(path).first
   side = [img.columns, img.rows].max
 
